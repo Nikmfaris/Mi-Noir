@@ -58,7 +58,16 @@ nav {
 /*  */
 .section {
   min-height: 100vh;
-  background-color: var(--black);
+  /* background-color: var(--black); */
+  background-color: #000000;
+  opacity: 1;
+  background-image: radial-gradient(
+      #d0d0d0 0.7000000000000001px,
+      transparent 0.7000000000000001px
+    ),
+    radial-gradient(#d0d0d0 0.7000000000000001px, #000000 0.7000000000000001px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
 }
 /*  */
 /* MAIN */
