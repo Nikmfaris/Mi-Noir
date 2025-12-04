@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMDCTF - Mi-Noir</title>
+    <link rel="stylesheet" href="../ctf-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://kit.fontawesome.com/ec08b82533.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <a href="../../index.html" class="back-link">
+            <i class="fas fa-arrow-left"></i>
+            Back to Home
+        </a>
+        
+        <div class="header">
+            <h1><i class="fas fa-flag"></i> GlacierCTF 2025</h1>
+            <p>Mi-Noir Team Writeups & Solutions</p>
+        </div>
+
+        <div id="content"></div>
+
+        <div class="footer">
+            <p>
+                <i class="fas fa-copyright"></i> 2025 Mi-Noir CTF Team | Writeup by mi-noir
+            </p>
+        </div>
+    </div>
+    
+    <script>
+        fetch('umdctf.md')
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById('content').innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById('content').innerHTML = '<p style="color: #ff6b6b; text-align: center;"><i class="fas fa-exclamation-circle"></i> Error loading markdown file: ' + error + '</p>';
+            });
+    </script>
+</body>
+</html>
