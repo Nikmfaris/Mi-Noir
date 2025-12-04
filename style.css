@@ -494,3 +494,364 @@ footer {
     }
   }
 }
+
+/*  */
+/* RESPONSIVE DESIGN */
+/*  */
+
+/* Tablets and small laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+  /* Navigation */
+  nav .nav-container .nav-menu {
+    gap: 3%;
+  }
+
+  nav .nav-container .nav-menu li a {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  nav .nav-container .nav-menu li a img {
+    width: 60px;
+  }
+
+  .ctfs-dropdown {
+    width: 240px !important;
+  }
+
+  /* Main Section */
+  .section-main {
+    flex-direction: column;
+    padding: 100px 20px 40px;
+    gap: 30px;
+  }
+
+  .main-left img {
+    width: 250px !important;
+    box-shadow: var(--black) -20px 20px 0px -2px, var(--white) -20px 20px !important;
+  }
+
+  .main-right {
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .main-right-top p {
+    font-size: 40px !important;
+    letter-spacing: 6px !important;
+    line-height: 48px !important;
+  }
+
+  .main-right-bot p {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  /* Members Section */
+  .member-title p {
+    font-size: 40px !important;
+    letter-spacing: 6px !important;
+  }
+
+  .member-members {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px !important;
+  }
+
+  .member-container {
+    width: 280px !important;
+    height: 390px !important;
+  }
+
+  .member-container img {
+    width: 280px !important;
+  }
+
+  /* CTFs Section */
+  .ctfs-title {
+    font-size: 40px !important;
+    letter-spacing: 6px !important;
+  }
+
+  .ctfs-container-group .ctfs-list {
+    width: 250px !important;
+    height: 250px !important;
+  }
+
+  .ctfs-list img {
+    width: 250px !important;
+  }
+
+  /* Footer */
+  footer .footer-inside {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav .nav-container {
+    margin: 6px;
+  }
+
+  nav .nav-container .nav-menu {
+    gap: 2%;
+    font-size: 12px;
+  }
+
+  nav .nav-container .nav-menu li a {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  nav .nav-container .nav-menu li a img {
+    width: 50px;
+  }
+
+  .ctfs-dropdown {
+    width: 200px !important;
+    left: auto !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  .ctfs-dropdown::before {
+    left: auto !important;
+    right: 20px !important;
+  }
+
+  .ctfs-menu-item:hover .ctfs-dropdown {
+    transform: translateY(0) !important;
+  }
+
+  .ctf-item {
+    padding: 10px 12px !important;
+    gap: 8px !important;
+  }
+
+  .ctf-badge {
+    font-size: 10px !important;
+    padding: 3px 6px !important;
+    min-width: 28px !important;
+  }
+
+  .ctf-name {
+    font-size: 12px !important;
+  }
+
+  .ctf-year {
+    font-size: 10px !important;
+  }
+
+  /* Main Section */
+  .section-main {
+    padding: 80px 15px 30px;
+    gap: 25px;
+  }
+
+  .main-left img {
+    width: 200px !important;
+    box-shadow: var(--black) -15px 15px 0px -2px, var(--white) -15px 15px !important;
+  }
+
+  .main-right {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .main-right-top p {
+    font-size: 32px !important;
+    letter-spacing: 4px !important;
+    line-height: 40px !important;
+  }
+
+  .main-right-bot p {
+    font-size: 14px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+  }
+
+  /* Members Section */
+  .member-title p {
+    font-size: 32px !important;
+    letter-spacing: 4px !important;
+  }
+
+  .member-members {
+    gap: 25px !important;
+  }
+
+  .member-container {
+    width: 260px !important;
+    height: 362px !important;
+  }
+
+  .member-container img {
+    width: 260px !important;
+  }
+
+  .member-back-inner .member-nickname p {
+    font-size: 28px !important;
+  }
+
+  .member-back-inner .member-position p {
+    font-size: 16px !important;
+  }
+
+  .member-back-inner .member-specialty p {
+    font-size: 16px !important;
+  }
+
+  .member-back-inner .member-quote p {
+    font-size: 16px !important;
+  }
+
+  .member-back-inner .member-sosmed a {
+    font-size: 14px !important;
+  }
+
+  /* CTFs Section */
+  .ctfs-title {
+    font-size: 32px !important;
+    letter-spacing: 4px !important;
+  }
+
+  .ctfs-container-group {
+    gap: 25px !important;
+    padding-right: 25px !important;
+  }
+
+  .ctfs-container-group .ctfs-list {
+    width: 220px !important;
+    height: 220px !important;
+  }
+
+  .ctfs-list img {
+    width: 220px !important;
+  }
+
+  /* Footer */
+  footer .footer-inside {
+    width: 90%;
+    padding: 20px 0 30px 0;
+    font-size: 12px;
+  }
+}
+
+/* Small mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  /* Navigation */
+  nav .nav-container .nav-menu li a {
+    font-size: 9px;
+    letter-spacing: 0.5px;
+  }
+
+  nav .nav-container .nav-menu li a img {
+    width: 40px;
+  }
+
+  .ctfs-dropdown {
+    width: 180px !important;
+  }
+
+  .ctf-item {
+    padding: 8px 10px !important;
+  }
+
+  /* Main Section */
+  .section-main {
+    padding: 70px 10px 25px;
+  }
+
+  .main-left img {
+    width: 160px !important;
+    box-shadow: var(--black) -12px 12px 0px -2px, var(--white) -12px 12px !important;
+  }
+
+  .main-right-top p {
+    font-size: 24px !important;
+    letter-spacing: 3px !important;
+    line-height: 32px !important;
+  }
+
+  .main-right-bot p {
+    font-size: 13px !important;
+    line-height: 20px !important;
+  }
+
+  /* Members Section */
+  .member-title p {
+    font-size: 24px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .member-members {
+    gap: 20px !important;
+  }
+
+  .member-container {
+    width: 220px !important;
+    height: 306px !important;
+  }
+
+  .member-container img {
+    width: 220px !important;
+  }
+
+  .member-back-inner {
+    margin: 14px !important;
+  }
+
+  .member-back-inner .member-nickname p {
+    font-size: 22px !important;
+  }
+
+  .member-back-inner .member-position p {
+    font-size: 14px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .member-back-inner .member-specialty p {
+    font-size: 14px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .member-back-inner .member-quote p {
+    font-size: 14px !important;
+  }
+
+  .member-back-inner .member-sosmed a {
+    font-size: 13px !important;
+  }
+
+  /* CTFs Section */
+  .ctfs-title {
+    font-size: 24px !important;
+    letter-spacing: 3px !important;
+  }
+
+  .ctfs-container-group {
+    gap: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .ctfs-container-group .ctfs-list {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .ctfs-list img {
+    width: 180px !important;
+  }
+
+  /* Footer */
+  footer .footer-inside {
+    font-size: 11px;
+    padding: 15px 0 25px 0;
+  }
+}
