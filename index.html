@@ -55,16 +55,16 @@
       </div>
     </nav>
     <!-- MAIN -->
-    <div id="main" class="section section-main">
-      <div class="main-left">
-        <img src="./img/Mi-Noir.png" alt="Mi-Noir" width="300px" />
+    <div id="main" class="section section-main flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 px-4 md:px-8">
+      <div class="main-left flex-shrink-0">
+        <img src="./img/Mi-Noir.png" alt="Mi-Noir" class="w-48 md:w-64 lg:w-80 h-auto" />
       </div>
-      <div class="main-right">
-        <div class="main-right-top">
-          <p>MI-NOIR</p>
+      <div class="main-right max-w-xs md:max-w-md lg:max-w-2xl">
+        <div class="main-right-top mb-6">
+          <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">MI-NOIR</p>
         </div>
         <div class="main-right-bot">
-          <p>
+          <p class="text-sm md:text-base lg:text-lg text-gray-300 leading-relaxed">
             Formed in December 2024, Mi-Noir is a formidable four-person team
             specializing in Capture The Flag (CTF) competitions, quickly
             establishing themselves as sharp operators in the cybersecurity
@@ -77,115 +77,133 @@
       </div>
     </div>
     <!-- MEMBERS -->
-    <div id="members" class="section section-members">
-      <div class="member-title"><p>LINE-UP</p></div>
-      <div class="member-members">
-        <div class="member-container">
+    <div id="members" class="section section-members py-12 md:py-16">
+      <div class="member-title mb-8 md:mb-12">
+        <p class="text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-wider">LINE-UP</p>
+      </div>
+      <div class="member-members flex flex-wrap justify-center gap-6 md:gap-8 px-4 md:px-8">
+        <div class="member-container w-56 md:w-72">
           <div class="member-inner">
-            <div class="member-front">
-              <img src="./img/kude.png" alt="KudeGulong" width="300px" />
+            <div class="member-front rounded-2xl overflow-hidden">
+              <img src="./img/kude.png" alt="KudeGulong" class="w-full h-auto object-cover" />
             </div>
-            <div class="member-back">
+            <div class="member-back rounded-2xl overflow-hidden">
               <div class="member-back-inner">
-                <div class="member-nickname"><p>Kude Gulong</p></div>
-                <div class="member-position"><p>aka President</p></div>
-                <div class="member-specialty">
-                  <p>Reverse Engineering • OSINT • Web • Forensic</p>
+                <div class="member-nickname mb-2">
+                  <p class="text-2xl md:text-3xl font-bold">Kude Gulong</p>
                 </div>
-                <div class="member-quote">
-                  <p>
+                <div class="member-position mb-4">
+                  <p class="text-lg md:text-xl font-semibold">aka President</p>
+                </div>
+                <div class="member-specialty mb-3">
+                  <p class="text-base md:text-lg">Reverse Engineering • OSINT • Web • Forensic</p>
+                </div>
+                <div class="member-quote mb-4">
+                  <p class="text-base md:text-lg italic">
                     "The flag is never hidden; it is merely encrypted by
                     complexity."
                   </p>
                 </div>
-                <div class="member-sosmed">
-                  <a href="#"><i class="fa-solid fa-globe"></i> None</a><br />
-                  <a href="https://github.com/Nikmfaris" target="_blank"
-                    ><i class="fa-brands fa-github"></i> Nikmfaris</a
-                  >
+                <div class="member-sosmed space-y-2 text-sm md:text-base">
+                  <a href="#" class="block hover:underline"><i class="fa-solid fa-globe"></i> None</a>
+                  <a href="https://github.com/Nikmfaris" target="_blank" class="block hover:underline">
+                    <i class="fa-brands fa-github"></i> Nikmfaris
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="member-container">
+        <div class="member-container w-56 md:w-72">
           <div class="member-inner">
-            <div class="member-front">
-              <img src="./img/ocean.png" alt="OceanWarranty" width="300px" />
+            <div class="member-front rounded-2xl overflow-hidden">
+              <img src="./img/ocean.png" alt="OceanWarranty" class="w-full h-auto object-cover" />
             </div>
-            <div class="member-back">
+            <div class="member-back rounded-2xl overflow-hidden">
               <div class="member-back-inner">
-                <div class="member-nickname"><p>Ocean Warranty</p></div>
-                <div class="member-position"><p>aka Vice President</p></div>
-                <div class="member-specialty">
-                  <p>Reverse Engineering • Web • Forensic • Crypto • PWN</p>
+                <div class="member-nickname mb-2">
+                  <p class="text-2xl md:text-3xl font-bold">Ocean Warranty</p>
                 </div>
-                <div class="member-quote">
-                  <p>"If the compiler accepts it, the system yields to it."</p>
+                <div class="member-position mb-4">
+                  <p class="text-lg md:text-xl font-semibold">aka Vice President</p>
                 </div>
-                <div class="member-sosmed">
-                  <a href="https://oceanwarranty.com/" target="_blank"
-                    ><i class="fa-solid fa-globe"></i> oceanwarranty.com</a
-                  ><br />
-                  <a href="https://github.com/FanzyBear" target="_blank"
-                    ><i class="fa-brands fa-github"></i> FanzyBear</a
-                  >
+                <div class="member-specialty mb-3">
+                  <p class="text-base md:text-lg">Reverse Engineering • Web • Forensic • Crypto • PWN</p>
+                </div>
+                <div class="member-quote mb-4">
+                  <p class="text-base md:text-lg italic">"If the compiler accepts it, the system yields to it."</p>
+                </div>
+                <div class="member-sosmed space-y-2 text-sm md:text-base">
+                  <a href="https://oceanwarranty.com/" target="_blank" class="block hover:underline">
+                    <i class="fa-solid fa-globe"></i> oceanwarranty.com
+                  </a>
+                  <a href="https://github.com/FanzyBear" target="_blank" class="block hover:underline">
+                    <i class="fa-brands fa-github"></i> FanzyBear
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="member-container">
+        <div class="member-container w-56 md:w-72">
           <div class="member-inner">
-            <div class="member-front">
-              <img src="./img/qs.png" alt="Qs18" width="300px" />
+            <div class="member-front rounded-2xl overflow-hidden">
+              <img src="./img/qs.png" alt="Qs18" class="w-full h-auto object-cover" />
             </div>
-            <div class="member-back">
+            <div class="member-back rounded-2xl overflow-hidden">
               <div class="member-back-inner">
-                <div class="member-nickname"><p>QS18</p></div>
-                <div class="member-position"><p>aka Burden</p></div>
-                <div class="member-specialty">
-                  <p>OSINT • Crypto • Forensic • Network • PWN</p>
+                <div class="member-nickname mb-2">
+                  <p class="text-2xl md:text-3xl font-bold">QS18</p>
                 </div>
-                <div class="member-quote">
-                  <p>
+                <div class="member-position mb-4">
+                  <p class="text-lg md:text-xl font-semibold">aka Burden</p>
+                </div>
+                <div class="member-specialty mb-3">
+                  <p class="text-base md:text-lg">OSINT • Crypto • Forensic • Network • PWN</p>
+                </div>
+                <div class="member-quote mb-4">
+                  <p class="text-base md:text-lg italic">
                     "Where others see a barrier, I see the forgotten default
                     password."
                   </p>
                 </div>
-                <div class="member-sosmed">
-                  <a href="#"><i class="fa-solid fa-globe"></i> None</a><br />
-                  <a href="https://github.com/muhdsyahirk" target="_blank"
-                    ><i class="fa-brands fa-github"></i> muhdsyahirk</a
-                  >
+                <div class="member-sosmed space-y-2 text-sm md:text-base">
+                  <a href="#" class="block hover:underline"><i class="fa-solid fa-globe"></i> None</a>
+                  <a href="https://github.com/muhdsyahirk" target="_blank" class="block hover:underline">
+                    <i class="fa-brands fa-github"></i> muhdsyahirk
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="member-container">
+        <div class="member-container w-56 md:w-72">
           <div class="member-inner">
-            <div class="member-front">
-              <img src="./img/death.png" alt="DeathOfLarenuf" width="300px" />
+            <div class="member-front rounded-2xl overflow-hidden">
+              <img src="./img/death.png" alt="DeathOfLarenuf" class="w-full h-auto object-cover" />
             </div>
-            <div class="member-back">
+            <div class="member-back rounded-2xl overflow-hidden">
               <div class="member-back-inner">
-                <div class="member-nickname"><p>DeathOfLarenuf</p></div>
-                <div class="member-position"><p>aka IDK</p></div>
-                <div class="member-specialty">
-                  <p>OSINT • Forensic • Reverse Engineering • Crypto</p>
+                <div class="member-nickname mb-2">
+                  <p class="text-2xl md:text-3xl font-bold">DeathOfLarenuf</p>
                 </div>
-                <div class="member-quote">
-                  <p>
+                <div class="member-position mb-4">
+                  <p class="text-lg md:text-xl font-semibold">aka IDK</p>
+                </div>
+                <div class="member-specialty mb-3">
+                  <p class="text-base md:text-lg">OSINT • Forensic • Reverse Engineering • Crypto</p>
+                </div>
+                <div class="member-quote mb-4">
+                  <p class="text-base md:text-lg italic">
                     "Speed is critical, but patience is the key that picks the
                     final lock."
                   </p>
                 </div>
-                <div class="member-sosmed">
-                  <a href="#"><i class="fa-solid fa-globe"></i> None</a><br />
-                  <a href="https://github.com/erzascarlet63" target="_blank"
-                    ><i class="fa-brands fa-github"></i> erzascarlet63</a
-                  >
+                <div class="member-sosmed space-y-2 text-sm md:text-base">
+                  <a href="#" class="block hover:underline"><i class="fa-solid fa-globe"></i> None</a>
+                  <a href="https://github.com/erzascarlet63" target="_blank" class="block hover:underline">
+                    <i class="fa-brands fa-github"></i> erzascarlet63
+                  </a>
                 </div>
               </div>
             </div>
